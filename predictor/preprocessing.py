@@ -3,9 +3,11 @@ from pathlib import Path
 import xarray as xr
 import numpy as np
 import json
-
+#                                   year and month value of data for the 11 months prior to predictor month, and then the predictor month
 KEY_COLS = ['lat', 'lon', 'time', 'gb_year', 'gb_month']
+#           land surface temp night, land surface temp day, precip, soil moisture, ndvi, evap index, ndvi anomaly
 VALUE_COLS = ['lst_night', 'lst_day', 'precip', 'sm', 'ndvi', 'evi', 'ndvi_anomaly']
+#                   ndvi, evap index, ndvi anomaly
 VEGETATION_LABELS = ['ndvi', 'evi', 'ndvi_anomaly']
 
 
